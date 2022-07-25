@@ -1,0 +1,45 @@
+case 3:
+        while (subIndex != 0)
+        {
+            cout << "What would you like to do?" << endl;
+            cout << "Modify product (Enter: 1)" << endl;
+            cout << "Add new product (Enter: 2)" << endl;
+            cout << "Get a product's info (Enter: 3)" << endl;
+            cout << "View products (Enter: 4)" << endl;
+            cout << "View product sales (Enter: 5)" << endl;
+            cout << "Go back to main menu (Enter: 0)" << endl;
+
+            cin >> subIndex;
+            cin.ignore();
+
+            switch (subIndex)
+            {
+            case 1:
+
+                gamma.SetUpdateProduct();
+
+                break;
+
+            case 2:
+
+                gamma.SetNewProduct();
+
+                break;
+
+            case 3:
+
+                gamma.GetSpecificProductInfo();
+
+                break;
+
+            case 4:
+
+                gamma.GetAllProduct();
+
+                break;
+            
+            case 5: 
+                gamma.GetAllProductSales();
+            }
+        }    
+            break;
